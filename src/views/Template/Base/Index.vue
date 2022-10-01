@@ -1,4 +1,4 @@
 <template>
   <h1>Index</h1>
-  <a href="/home"> HOME</a>
+  <router-link to="/home">Home</router-link>
 </template>
