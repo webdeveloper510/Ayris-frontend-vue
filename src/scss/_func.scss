@@ -1,0 +1,10 @@
+$vw-viewport: 1920;
+$vw-enable: true;
+
+@function get-vw($pixel) {
+  @if $vw-enable {
+    $vw-context: $vw-viewport * 0.01 * 1px;
+    @return $pixel / $vw-context * 1vw;
+  }
+  @return $pixel;
+}
