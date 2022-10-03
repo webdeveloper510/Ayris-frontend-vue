@@ -35,7 +35,7 @@ class AuthService {
     });
   }
 
-  register(user) {
+  register(user) { 
     return apiClient
       .post("api/register/", {
         username: user.username,
