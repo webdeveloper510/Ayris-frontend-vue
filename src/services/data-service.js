@@ -1,4 +1,4 @@
-import apiClient from "@/http-common";
+import apiClient from "../http-common";
 // import authHeader from "./auth-header";
 
 class DataService {
