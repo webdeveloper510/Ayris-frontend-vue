@@ -4,8 +4,8 @@
       <div class="header">
         <div class="header-menu">
           <div class="text-header left">
-            <p><router-link to="/home">Home</router-link></p>
-            <p>2</p>
+            <p><router-link to="/home">Temple</router-link></p>
+            <p>Gate</p>
           </div>
         </div>
         <div class="header-mid-left">
@@ -16,9 +16,9 @@
 
         <div class="header-mid-center">
           <div class="text-mid-center">
-            <p>BLal alballzaldalzdaz</p>
-            <p>BLal alballzaldalzdaz fsf sdf sdfs d</p>
-            <p>BLal alballzaldalzdaz</p>
+            <p>Ayris Beauty Machine Temple</p>
+            <p>Earth Esthetic and Ecologic Restoration Machine</p>
+            <p>Ayris Academy of Decorative Art</p>
           </div>
         </div>
 
@@ -125,10 +125,10 @@ export default {
 }
 .text-mid-center > p {
   //line-height: 1.5vw;
-  font-size: 1vw;
-  padding-top: 0.35vw;
-  //padding-bottom: 0vw;
+  font-size: .7vw;
+  padding-top: 0.8vw;
   color: white;
+  padding-left: 16px;
 }
 
 .text-header {

@@ -3,6 +3,17 @@
     <HeaderComponent></HeaderComponent>
     <div id="container">
       <div class="menu menu-left">
+        <div class="text-left">
+          <p><router-link to="">Year</router-link></p>
+          <p><router-link to="">Era/Style</router-link></p>
+          <p><router-link to="">Location</router-link></p>
+          <p><router-link to="">Medium</router-link></p>
+          <p><router-link to="">Mythology</router-link></p>
+          <p><router-link to="">Empresses</router-link></p>
+          <p><router-link to="">Philosophy</router-link></p>
+          <p><router-link to="">Dream Engine</router-link></p>
+          <p><router-link to="">Etherith</router-link></p>
+        </div>
         <CategoryMenuComponent :categories="this.getMenu(true)" />
       </div>
       <div class="content">
@@ -14,6 +25,17 @@
         <!--        <router-view />-->
       </div>
       <div class="menu menu-right">
+        <div class="text-right">
+          <p><router-link to="">Banners</router-link></p>
+          <p><router-link to="">Heaven</router-link></p>
+          <p><router-link to="">Music</router-link></p>
+          <p><router-link to="">Library</router-link></p>
+          <p><router-link to="">Court</router-link></p>
+          <p><router-link to="">Empire</router-link></p>
+          <p><router-link to="">Army</router-link></p>
+          <p><router-link to="">Market</router-link></p>
+          <p><router-link to="">Treasury</router-link></p>
+        </div>
         <CategoryMenuComponent :categories="this.getMenu(false)" />
       </div>
     </div>
@@ -180,6 +202,30 @@ export default {
   /*1920 x 302*/
   width: get-vw(1920px);
   height: get-vw(302px);
+}
+
+.menu.menu-left .text-left,
+.menu.menu-right .text-right {
+  margin-left: 7vw;
+  width: 6.3vw;
+  height: 6.3vw;
+  margin-top: 8.2vw;
+  font-size: 1vw;
+}
+
+.menu.menu-left .text-left p,
+.menu.menu-right .text-right p {
+  font-size: 0.8vw;
+}
+
+.menu.menu-left .text-left p a,
+.menu.menu-right .text-right p a {
+  color: #fff;
+}
+
+.menu.menu-left .text-left p:not(:first-child),
+.menu.menu-right .text-right p:not(:first-child) {
+  margin-top: 1.8vw;
 }
 </style>
 
