@@ -2,6 +2,26 @@
   <component :is="layout" />
 </template>
 
+<style>
+  @font-face {
+    font-family: 'Old London';
+    src: url('../public/font/OldLondon.woff2') format('woff2'),
+        url('../public/font/OldLondon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Old London Alternate';
+    src: url('../public/font/OldLondonAlternate.woff2') format('woff2'),
+        url('../public/font/OldLondonAlternate.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+</style>
+
 <script>
 import CleanLayout from "@/layouts/CleanLayout";
 import DashboardLayout from "@/layouts/DashboardLayout";

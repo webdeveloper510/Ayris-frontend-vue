@@ -81,6 +81,12 @@ export default {
 <style lang="scss">
 @import "./src/scss/_func.scss";
 
+p {
+  a {
+    font-family: "Old London";
+  }
+}
+
 #nav {
   /*background-color: red;*/
   font-size: 2vw;
@@ -129,6 +135,7 @@ export default {
   padding-top: 0.8vw;
   color: white;
   padding-left: 16px;
+  font-family: "Old London Alternate";
 }
 
 .text-header {
@@ -145,6 +152,8 @@ export default {
     p {
       padding-top: 0vw;
       padding-bottom: 1vw;
+      color: #fff;
+      font-family: 'Old London';
     }
   }
   &.right {

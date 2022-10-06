@@ -215,7 +215,7 @@ export default {
 
 .menu.menu-left .text-left p,
 .menu.menu-right .text-right p {
-  font-size: 0.8vw;
+  font-size: 1vw;
 }
 
 .menu.menu-left .text-left p a,
@@ -225,7 +225,7 @@ export default {
 
 .menu.menu-left .text-left p:not(:first-child),
 .menu.menu-right .text-right p:not(:first-child) {
-  margin-top: 1.8vw;
+  margin-top: 1.5vw;
 }
 </style>
 
