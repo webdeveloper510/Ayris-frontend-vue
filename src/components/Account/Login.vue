@@ -9,8 +9,6 @@
         <label for="password">Password</label>
         <input type="password" v-model="form.password" />
       </div>
-      <br />
-      <br />
       <div class="form-group">
         <button type="submit">Login</button>
       </div>
@@ -19,10 +17,43 @@
       </div>
     </div>
   </form>
-  <br />
-  <br />
   <a href="/reset">Reset account</a>
 </template>
+
+<style>
+  div#login-form {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  div#login-form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div#login-form .form-group label {
+    display: flex;
+    font-family: "Old London";
+    font-size: 20px;
+  }
+
+  div#login-form .form-group input {
+    margin: 5px 0 20px;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid #7e7e7e;
+    padding: 12px 10px;
+  }
+
+  div#login-form .form-group button {
+    padding: 10px 20px;
+    width: fit-content;
+    min-width: 150px;
+    margin: 10px auto 15px;
+    cursor: pointer;
+  }
+</style>
 
 <script>
 export default {

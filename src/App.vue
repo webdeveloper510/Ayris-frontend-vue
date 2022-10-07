@@ -12,14 +12,31 @@
     font-display: block;
 }
 
-@font-face {
-    font-family: 'Old London Alternate';
-    src: url('../public/font/OldLondonAlternate.woff2') format('woff2'),
-        url('../public/font/OldLondonAlternate.woff') format('woff');
+  @font-face {
+      font-family: 'Old London Alternate';
+      src: url('../public/font/OldLondonAlternate.woff2') format('woff2'),
+          url('../public/font/OldLondonAlternate.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: block;
+  }
+  @font-face {
+    font-family: 'Trajan';
+    src: url('../public/font/TrajanPro-Regular.woff2') format('woff2'),
+        url('../public/font/TrajanPro-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: block;
-}
+    font-display: swap;
+  }
+
+  @font-face {
+      font-family: 'Trajan-Bold';
+      src: url('../public/font/TrajanPro-Bold.woff2') format('woff2'),
+          url('../public/font/TrajanPro-Bold.woff') format('woff');
+      font-weight: bold;
+      font-style: normal;
+      font-display: swap;
+  }
 </style>
 
 <script>

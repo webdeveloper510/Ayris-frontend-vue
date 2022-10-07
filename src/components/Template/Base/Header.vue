@@ -131,11 +131,11 @@ p {
 }
 .text-mid-center > p {
   //line-height: 1.5vw;
-  font-size: .7vw;
-  padding-top: 0.8vw;
+  font-size: 0.6vw;
+  padding-top: 0.9vw;
   color: white;
-  padding-left: 16px;
-  font-family: "Old London Alternate";
+  padding-left: 12px;
+  font-family: "Trajan-Bold";
 }
 
 .text-header {

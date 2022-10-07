@@ -1,11 +1,11 @@
 <template>
   <form @submit.prevent="handleRegister">
-    <div id="login-form">
+    <div id="register-form">
       <div class="form-group">
-        <div class="form-group">
           <label for="username">Username</label>
           <input type="text" v-model="form.username" />
         </div>
+      <div class="form-group">
         <label for="email">Email</label>
         <input type="email" v-model="form.email" />
       </div>
@@ -26,6 +26,50 @@
     </div>
   </form>
 </template>
+
+<style>
+  div#register-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  div#register-form .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+  }
+
+  div#register-form .form-group:nth-child(5) {
+    width: 100%;
+  }
+
+  div#register-form .form-group label {
+    display: flex;
+    font-family: "Old London";
+    font-size: 20px;
+  }
+
+  div#register-form .form-group input {
+    margin: 5px 0 20px;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid #7e7e7e;
+    padding: 12px 10px;
+  }
+
+  div#register-form .form-group button {
+    padding: 10px 20px;
+    width: fit-content;
+    min-width: 150px;
+    margin: 10px auto 15px;
+    cursor: pointer;
+  }
+</style>
 
 <script>
 export default {
