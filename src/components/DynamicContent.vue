@@ -1,6 +1,6 @@
 <template>
-  <h1>current Page : {{ currentPage }}</h1>
-  <h5>{{ path }}</h5>
+  <!-- <h1>current Page : {{ currentPage }}</h1>
+  <h5>{{ path }}</h5> -->
 
   <keep-alive>
     <component :is="activeComponent" v-bind="currentProperties" />
@@ -21,7 +21,11 @@ export default {
     CategoryComponent: defineAsyncComponent(() =>
       import("@/views/Template/Pages/Category")
     ),
-    LoginComponent: defineAsyncComponent(() => import("@/views/Account/Login")),
+
+    LoginComponent: defineAsyncComponent(() => 
+      import("@/views/Account/Login")
+    ),
+
     RegisterComponent: defineAsyncComponent(() =>
       import("@/views/Account/Register")
     ),
@@ -56,6 +60,9 @@ export default {
       }
       if (currentPage.value === "page") {
         return "CategoryComponent";
+      }
+      if (currentPage.value === "build") {
+        return "BuildComponent";
       }
 
       return "NULLLL";

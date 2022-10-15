@@ -1,7 +1,34 @@
 <template>
-  <h1>Home</h1>
-  <!--  <ContainerComponent></ContainerComponent>-->
+  <div class="home-page">
+    <span>
+      <img src="../../../assets/home-img.gif" alt="home-img">
+    </span>
+  </div>
+   <!-- <ContainerComponent></ContainerComponent> -->
 </template>
+
+<style lang="scss">
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .home-page {
+      display: flex;
+      width: 100%;
+      height: 100%;
+    span {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+  }
+  
+</style>
 
 <script>
 // import ContainerComponent from "@/components/Template/Base/Container";
