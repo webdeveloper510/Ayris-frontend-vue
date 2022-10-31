@@ -32,6 +32,9 @@ export default {
     BuildComponent: defineAsyncComponent(() =>
       import("@/views/Template/Pages/Build")
     ),
+    MythologyComponent: defineAsyncComponent(() =>
+      import("@/views/Template/Pages/Mythology")
+    ),
   },
   data() {
     return {
@@ -63,6 +66,9 @@ export default {
       }
       if (currentPage.value === "build") {
         return "BuildComponent";
+      }
+      if (currentPage.value === "mythology") {
+        return "MythologyComponent";
       }
 
       return "NULLLL";

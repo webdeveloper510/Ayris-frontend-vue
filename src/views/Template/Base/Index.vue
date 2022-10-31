@@ -1,7 +1,7 @@
 <template>
   <div class="main-page">
     <!-- <h1>Index</h1> -->
-    <router-link to="/home">Homeeee</router-link>
+    <router-link to="/home">Home</router-link>
   </div>
 </template>
 

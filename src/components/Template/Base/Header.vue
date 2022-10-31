@@ -132,10 +132,21 @@ p {
 .text-mid-center > p {
   //line-height: 1.5vw;
   font-size: 0.6vw;
-  padding-top: 0.9vw;
   color: white;
   padding-left: 12px;
   font-family: "Trajan-Bold";
+}
+
+.text-mid-center p:nth-child(1) {
+  padding-top: 0.6vw;
+}
+
+.text-mid-center p:nth-child(2) {
+  padding-top: 1vw;
+}
+
+.text-mid-center p:nth-child(3) {
+  padding-top: 1.3vw;
 }
 
 .text-header {

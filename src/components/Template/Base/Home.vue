@@ -9,9 +9,7 @@
 
 <style lang="scss">
   .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     .home-page {
       display: flex;
       width: 100%;

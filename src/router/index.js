@@ -40,6 +40,12 @@ const routes = [
     name: "Build",
     component: () => import("../views/Template/Pages/Build"),
   },
+
+  {
+    path: "/mythology",
+    name: "Mythology",
+    component: () => import("../views/Template/Pages/Mythology"),
+  },
   {
     path: "/page/:slug",
     name: "Category",

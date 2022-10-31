@@ -20,7 +20,12 @@ export default {
     CategoryListComponent: defineAsyncComponent(() =>
       import("./Template/Pages/Category/CategoryList")
     ),
+
+    RegisterComponent: defineAsyncComponent(() =>
+      import("@/views/Account/Register")
+    ),
   },
+
   props: {
     currentPath: String,
   },
@@ -58,6 +63,8 @@ export default {
     getActiveComponent(page) {
       if (page === "page") {
         this.currentComponent = "CategoryListComponent";
+      } else if (page === "register") {
+        this.currentComponent = "RegisterComponent";
       } else {
         this.currentComponent = "None";
       }

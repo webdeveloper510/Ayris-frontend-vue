@@ -8,7 +8,7 @@
           <p><router-link to="">Era/Style</router-link></p>
           <p><router-link to="">Location</router-link></p>
           <p><router-link to="">Medium</router-link></p>
-          <p><router-link to="">Mythology</router-link></p>
+          <p><router-link to="/mythology">Mythology</router-link></p>
           <p><router-link to="">Empresses</router-link></p>
           <p><router-link to="">Philosophy</router-link></p>
           <p><router-link to="">Dream Engine</router-link></p>
@@ -17,12 +17,7 @@
         <CategoryMenuComponent :categories="this.getMenu(true)" />
       </div>
       <div class="content">
-        <!--        displayDetails : {{ displayDetails }}-->
-        <!--        {{ activeComponent }}-->
-        <!--        {{ currentProperties }}-->
-        <!--        <CategoryShowComponent></CategoryShowComponent>-->
         <DynamicContentComponent />
-        <!--        <router-view />-->
       </div>
       <div class="menu menu-right">
         <div class="text-right">
@@ -41,14 +36,6 @@
     </div>
     <FooterComponent></FooterComponent>
     <DynamicExtraContent :currentPath="getCurrentPath" />
-    <!--    dd-->
-    <!--    <div v-if="getcatId && getCat.children.length > 0">-->
-    <!--      cat : {{ getcatId }}-->
-    <!--      setDashboardSize-->
-    <!--      <br />-->
-    <!--      {{ getCat }}-->
-    <!--      <CategoryListComponent v-bind="getCatChildren" />-->
-    <!--    </div>-->
   </div>
 </template>
 
