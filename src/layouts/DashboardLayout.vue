@@ -1,48 +1,21 @@
 <template>
   <div id="dashboard" :class="[checkFullSize ? 'fullSize' : '']">
-    <HeaderComponent></HeaderComponent>
+    <!-- <HeaderComponent></HeaderComponent> -->
     <div id="container">
-      <div class="menu menu-left">
-        <div class="text-left">
-          <p><router-link to="">Year</router-link></p>
-          <p><router-link to="">Era/Style</router-link></p>
-          <p><router-link to="">Location</router-link></p>
-          <p><router-link to="">Medium</router-link></p>
-          <p><router-link to="/mythology">Mythology</router-link></p>
-          <p><router-link to="">Empresses</router-link></p>
-          <p><router-link to="">Philosophy</router-link></p>
-          <p><router-link to="">Dream Engine</router-link></p>
-          <p><router-link to="">Etherith</router-link></p>
-        </div>
-        <CategoryMenuComponent :categories="this.getMenu(true)" />
-      </div>
       <div class="content">
         <DynamicContentComponent />
       </div>
-      <div class="menu menu-right">
-        <div class="text-right">
-          <p><router-link to="">Banners</router-link></p>
-          <p><router-link to="">Heaven</router-link></p>
-          <p><router-link to="">Music</router-link></p>
-          <p><router-link to="">Library</router-link></p>
-          <p><router-link to="">Court</router-link></p>
-          <p><router-link to="">Empire</router-link></p>
-          <p><router-link to="">Army</router-link></p>
-          <p><router-link to="">Market</router-link></p>
-          <p><router-link to="">Treasury</router-link></p>
-        </div>
-        <CategoryMenuComponent :categories="this.getMenu(false)" />
-      </div>
+      
     </div>
-    <FooterComponent></FooterComponent>
+    <!-- <FooterComponent></FooterComponent> -->
     <DynamicExtraContent :currentPath="getCurrentPath" />
   </div>
 </template>
 
 <script>
-import HeaderComponent from "@/components/Template/Base/Header";
-import FooterComponent from "@/components/Template/Base/Footer";
-import CategoryMenuComponent from "@/components/Template/Pages/Category/CategoryMenu";
+// import HeaderComponent from "@/components/Template/Base/Header";
+// import FooterComponent from "@/components/Template/Base/Footer";
+// import CategoryMenuComponent from "@/components/Template/Pages/Category/CategoryMenu";
 // import CategoryListComponent from "@/components/Template/Pages/Category/CategoryList";
 import DynamicContentComponent from "@/components/DynamicContent";
 import DynamicExtraContent from "@/components/DynamicExtraContent";
@@ -58,9 +31,9 @@ export default {
     };
   },
   components: {
-    FooterComponent,
-    HeaderComponent,
-    CategoryMenuComponent,
+    // FooterComponent,
+    // HeaderComponent,
+    // CategoryMenuComponent,
     // CategoryListComponent,
     DynamicContentComponent,
     DynamicExtraContent,
@@ -222,7 +195,7 @@ export default {
   margin: 0;
   padding: 0;
   /*height: 100vw;*/
-  width: 100vw;
+  width: 100%;
 }
 .fullSize {
   height: 100vw;

@@ -1,41 +1,107 @@
 <template>
-  <form class="register" @submit.prevent="handleRegister">
-    <div id="register-form">
-      <div class="form-group user">
-        <img src="../../assets/input-bg.png" alt="input-bg">
-          <input type="text" placeholder="User name" v-model="form.username" />
-      </div>
-      <div class="bottom-fields">
-        <div class="form-group email">
-          <img src="../../assets/field-input.png" alt="input-bg">
-            <input type="text" placeholder="Email" v-model="form.email" />
+  <div class="heading-main">
+      <img src="../../assets/field-input.png" alt="input-bg">
+      <h3>Register</h3>
+  </div>
+  <div class="register-main">
+    <form class="register" @submit.prevent="handleRegister">
+      <div id="register-form">
+        <div class="form-group user">
+          <img src="../../assets/input-bg.png" alt="input-bg">
+            <input type="text" placeholder="User name" v-model="form.username" />
         </div>
+        <div class="bottom-fields">
+          <div class="form-group email">
+            <img src="../../assets/field-input.png" alt="input-bg">
+              <input type="text" placeholder="Email" v-model="form.email" />
+          </div>
 
-        <div class="form-group btns">
-          <img src="../../assets/register-field.png" alt="register-field">
-          <button type="submit">Register</button>
-        </div>
+          <div class="form-group btns">
+            <img src="../../assets/register-field.png" alt="register-field">
+            <button type="submit">Register</button>
+          </div>
 
-        <div class="form-group password">
-          <img src="../../assets/field-input.png" alt="input-bg">
-            <input type="text" placeholder="Password" v-model="form.password" />
+          <div class="form-group password">
+            <img src="../../assets/field-input.png" alt="input-bg">
+              <input type="text" placeholder="Password" v-model="form.password" />
+          </div>
+        </div>
+        <div class="form-group" id="message">
+          {{ message }}
         </div>
       </div>
-      <div class="form-group" id="message">
-        {{ message }}
-      </div>
-    </div>
-  </form>
+    </form>
+  </div>
+  <div class="footer-main">
+      <h3><router-link to="/home">Main Page</router-link></h3>
+  </div>
 </template>
 
 <style>
+.heading-main, .footer-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer-main {
+  margin-top: -7vw;
+}
+
+.heading-main h3, .footer-main h3{
+  position: absolute;
+  top: 5.2vw;
+  left: 1.5vw;
+  right: 0;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw;
+  color: #fff;
+}
+
+.footer-main h3 {
+  top: 1.2vw;
+  left: 1.6vw;
+  font-size: 2vw;
+  color: #951617;
+  font-family: "Old London";
+}
+
+.footer-main h3 a {
+  color: #951617;
+  text-decoration: none;
+}
+
+.heading-main img {
+  margin-bottom: -14vw;
+  position: relative;
+  width: 20vw;
+  margin-left: 1.4vw;
+  height: 5.5vw;
+}
+.register-main {
+  background-image: url(../../assets/register-form.png);
+  background-repeat: no-repeat;
+  background-size: 95vw 67vw;
+  min-height: 67vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+}
+
  form.register {
   background-image: url(../../assets/form-bg.png);
   background-repeat: no-repeat;
-  background-size: 73% 62%;
+  background-size: 46vw 24vw;
   background-position: top center;
   display: flex;
   height: 100%;
+  margin-top: -5vw;
  }
 
   div#register-form {

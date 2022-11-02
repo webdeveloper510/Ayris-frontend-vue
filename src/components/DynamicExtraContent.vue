@@ -20,10 +20,6 @@ export default {
     CategoryListComponent: defineAsyncComponent(() =>
       import("./Template/Pages/Category/CategoryList")
     ),
-
-    RegisterComponent: defineAsyncComponent(() =>
-      import("@/views/Account/Register")
-    ),
   },
 
   props: {

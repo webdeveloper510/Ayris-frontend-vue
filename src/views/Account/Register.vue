@@ -9,10 +9,12 @@
   .register-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    min-height: 67vw;
     background-image: url(../../assets/register-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 0;
   }
   h1 {
     color: #fff;
