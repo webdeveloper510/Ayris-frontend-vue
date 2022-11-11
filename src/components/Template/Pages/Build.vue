@@ -1,19 +1,64 @@
 <template>
-  <div class="build-container">
-    <div class="main-heading">
-      <h1>Build</h1>
-    </div>
-    <div class="input-container">
-      <input type="text" placeholder="INSERT DETAILS" />
-    </div>
-    <button>Save</button>
-  </div>
+
+  <HeaderComponent></HeaderComponent>
+      <div class="build">
+        <div class="menu menu-left">
+            <div class="text-left">
+              <p><router-link to="">Year</router-link></p>
+              <p><router-link to="">Era/Style</router-link></p>
+              <p><router-link to="">Location</router-link></p>
+              <p><router-link to="">Medium</router-link></p>
+              <p><router-link to="/mythology">Mythology</router-link></p>
+              <p><router-link to="">Empresses</router-link></p>
+              <p><router-link to="">Philosophy</router-link></p>
+              <p><router-link to="">Dream Engine</router-link></p>
+              <p><router-link to="">Etherith</router-link></p>
+            </div>
+          <!-- <CategoryMenuComponent :categories="this.getMenu(true)" /> -->
+        </div>
+
+        <div class="build-container content">
+          <div class="main-heading">
+            <h1>Build</h1>
+          </div>
+          <div class="input-container">
+            <input type="text" placeholder="INSERT DETAILS" />
+          </div>
+          <button>Save</button>
+        </div>
+
+        <div class="menu menu-right">
+            <div class="text-right">
+              <p><router-link to="">Banners</router-link></p>
+              <p><router-link to="">Heaven</router-link></p>
+              <p><router-link to="/music">Music</router-link></p>
+              <p><router-link to="">Library</router-link></p>
+              <p><router-link to="">Court</router-link></p>
+              <p><router-link to="">Empire</router-link></p>
+              <p><router-link to="">Army</router-link></p>
+              <p><router-link to="">Market</router-link></p>
+              <p><router-link to="">Treasury</router-link></p>
+            </div>
+            <!-- <CategoryMenuComponent :categories="this.getMenu(false)" /> -->
+        </div>
+      </div>
+  <FooterComponent></FooterComponent>
 </template>
 
 <style lang="scss">
-.content {
-  display: inline-flex;
-}
+
+.build {
+    display: flex;
+  }
+  .content {
+    width: 100vw;
+  }
+
+  .header-img {
+    height: get-vw(316px);
+    width: get-vw(1920px);
+  }
+
   .build-container {
     display: flex;
     flex-direction: column;
@@ -69,12 +114,59 @@
       font-size: 30px;
     }
   }
+
+  .menu {
+    /*389x 743*/
+    width: 34.260417vw;
+    height: get-vw(743px);
+  }
+
+  #nav-footer {
+    /*1920 x 302*/
+    width: get-vw(1920px);
+    height: get-vw(302px);
+  }
+
+  .menu.menu-left .text-left,
+  .menu.menu-right .text-right {
+    margin-left: 7vw;
+    width: 6.3vw;
+    height: 6.3vw;
+    margin-top: 8.2vw;
+    font-size: 1vw;
+  }
+
+  .menu.menu-left .text-left p,
+  .menu.menu-right .text-right p {
+    font-size: 1vw;
+  }
+
+  .menu.menu-left .text-left p a,
+  .menu.menu-right .text-right p a {
+    color: #fff;
+  }
+
+  .menu.menu-left .text-left p:not(:first-child),
+  .menu.menu-right .text-right p:not(:first-child) {
+    margin-top: 1.5vw;
+  }
+  .menu {
+    /*border: 1px solid blue;*/
+    /*background-color: grey !important;*/
+    background: url("../../Template/Base/img/cat-menu.jpg")
+      no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 </style>
 
 <script>
+import HeaderComponent from "@/components/Template/Base/Header";
+import FooterComponent from "@/components/Template/Base/Footer";
 export default {
   name: "BuildComponent",
-  components: {},
   data() {
     return {
       loading: false,
@@ -82,6 +174,12 @@ export default {
       selectedObjName: null,
     };
   },
+
+  components: {
+    FooterComponent,
+    HeaderComponent,
+  },
+
   computed: {
     loggedIn() {
       return this.$store.state.auth.status.loggedIn;

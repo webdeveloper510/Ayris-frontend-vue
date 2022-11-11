@@ -35,6 +35,9 @@ export default {
     MythologyComponent: defineAsyncComponent(() =>
       import("@/views/Template/Pages/Mythology")
     ),
+    MusicComponent: defineAsyncComponent(() =>
+      import("@/views/Template/Pages/Music")
+    ),
   },
   data() {
     return {
@@ -69,6 +72,10 @@ export default {
       }
       if (currentPage.value === "mythology") {
         return "MythologyComponent";
+      }
+
+      if (currentPage.value === "music") {
+        return "MusicComponent";
       }
 
       return "NULLLL";

@@ -1,5 +1,4 @@
 <template>
-  <h1>login</h1>
   <Login></Login>
 </template>
 

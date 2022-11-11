@@ -2,43 +2,43 @@
 
     <HeaderComponent></HeaderComponent>
       <div class="home">
-        <div class="menu menu-left">
-        <div class="text-left">
-          <p><router-link to="">Year</router-link></p>
-          <p><router-link to="">Era/Style</router-link></p>
-          <p><router-link to="">Location</router-link></p>
-          <p><router-link to="">Medium</router-link></p>
-          <p><router-link to="/mythology">Mythology</router-link></p>
-          <p><router-link to="">Empresses</router-link></p>
-          <p><router-link to="">Philosophy</router-link></p>
-          <p><router-link to="">Dream Engine</router-link></p>
-          <p><router-link to="">Etherith</router-link></p>
+          <div class="menu menu-left">
+            <div class="text-left">
+              <p><router-link to="">Year</router-link></p>
+              <p><router-link to="">Era/Style</router-link></p>
+              <p><router-link to="">Location</router-link></p>
+              <p><router-link to="">Medium</router-link></p>
+              <p><router-link to="/mythology">Mythology</router-link></p>
+              <p><router-link to="">Empresses</router-link></p>
+              <p><router-link to="">Philosophy</router-link></p>
+              <p><router-link to="">Dream Engine</router-link></p>
+              <p><router-link to="">Etherith</router-link></p>
+            </div>
+          <!-- <CategoryMenuComponent :categories="this.getMenu(true)" /> -->
         </div>
-        <!-- <CategoryMenuComponent :categories="this.getMenu(true)" /> -->
-      </div>
 
-      <div class="content">
-        <div class="home-page">
-          <span>
-            <img src="../../../assets/home-img.gif" alt="home-img">
-          </span>
+        <div class="content">
+          <div class="home-page">
+            <span>
+              <img src="../../../assets/home-img.gif" alt="home-img">
+            </span>
+          </div>
         </div>
-      </div>
 
-      <div class="menu menu-right">
-        <div class="text-right">
-          <p><router-link to="">Banners</router-link></p>
-          <p><router-link to="">Heaven</router-link></p>
-          <p><router-link to="">Music</router-link></p>
-          <p><router-link to="">Library</router-link></p>
-          <p><router-link to="">Court</router-link></p>
-          <p><router-link to="">Empire</router-link></p>
-          <p><router-link to="">Army</router-link></p>
-          <p><router-link to="">Market</router-link></p>
-          <p><router-link to="">Treasury</router-link></p>
+        <div class="menu menu-right">
+          <div class="text-right">
+            <p><router-link to="">Banners</router-link></p>
+            <p><router-link to="">Heaven</router-link></p>
+            <p><router-link to="/music">Music</router-link></p>
+            <p><router-link to="">Library</router-link></p>
+            <p><router-link to="">Court</router-link></p>
+            <p><router-link to="">Empire</router-link></p>
+            <p><router-link to="">Army</router-link></p>
+            <p><router-link to="">Market</router-link></p>
+            <p><router-link to="">Treasury</router-link></p>
+          </div>
+          <!-- <CategoryMenuComponent :categories="this.getMenu(false)" /> -->
         </div>
-        <!-- <CategoryMenuComponent :categories="this.getMenu(false)" /> -->
-      </div>
       </div>
     <FooterComponent></FooterComponent>
   
