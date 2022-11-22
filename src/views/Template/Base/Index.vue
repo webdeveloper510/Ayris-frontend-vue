@@ -1,7 +1,10 @@
 <template>
   <div class="main-page">
     <!-- <h1>Index</h1> -->
-    <router-link to="/home">Home</router-link>
+    <router-link to="/home">
+      <div to="/home">Home</div>
+    </router-link>
+    
   </div>
 </template>
 
@@ -13,6 +16,11 @@
     background-size: contain;
     background-position: center;
     a {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+    div {
       padding-top: 3rem;
       display: flex;
       justify-content: center;
