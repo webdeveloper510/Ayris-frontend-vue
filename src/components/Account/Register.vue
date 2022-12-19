@@ -21,9 +21,15 @@
             <button type="submit">Register</button>
           </div>
 
-          <div class="form-group password">
-            <img src="../../assets/field-input.png" alt="input-bg">
-              <input type="text" placeholder="Password" v-model="form.password" />
+          <div class="password-field">
+              <div class="form-group password">
+              <img src="../../assets/field-input.png" alt="input-bg">
+                <input type="text" placeholder="Password" v-model="form.password" />
+            </div>
+            <div class="form-group password">
+              <img src="../../assets/field-input.png" alt="input-bg">
+                <input type="text" placeholder="Confirm Password" v-model="form.password2" />
+            </div>
           </div>
         </div>
         <div class="form-group" id="message">
@@ -63,6 +69,11 @@
   color: #fff;
 }
 
+.heading-main h3 {
+  top: 5.6vw;
+  font-size: 2.5vw;
+}
+
 .footer-main h3 {
   top: 1.2vw;
   left: 1.6vw;
@@ -81,13 +92,13 @@
   position: relative;
   width: 20vw;
   margin-left: 1.4vw;
-  height: 5.5vw;
+  height: 4.5vw;
 }
 .register-main {
   background-image: url(../../assets/register-form.png);
   background-repeat: no-repeat;
-  background-size: 95vw 67vw;
-  min-height: 67vw;
+  background-size: 83% 100%;
+  min-height: 139vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,11 +108,11 @@
  form.register {
   background-image: url(../../assets/form-bg.png);
   background-repeat: no-repeat;
-  background-size: 46vw 24vw;
+  background-size: 44vw 53vh;
   background-position: top center;
   display: flex;
-  height: 100%;
-  margin-top: -5vw;
+  height: 82vh;
+  margin-top: 0vw;
  }
 
   div#register-form {
@@ -111,6 +122,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    justify-content: center;
   }
 
   div#register-form .form-group {
@@ -121,13 +133,13 @@
 
   div#register-form .form-group.user {
     padding: 16px 0px;
-    margin-top: 7.5rem;
+    margin-top: 7rem;
     position: relative;
   }
 
   div#register-form .form-group.user img {
     object-fit: contain;
-    width: 125px;
+    width: 9vw;
     object-position: center;
     margin: 0 auto;
   }
@@ -141,7 +153,7 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    width: 84px;
+    width: 6vw;
     padding: 0 8px;
     left: 0;
     right: 0;
@@ -151,6 +163,7 @@
     color: #fff;
     font-family: "Trajan-Bold";
     outline: none;
+    font-size: .9vw;
   }
 
   div#register-form .form-group.user input::placeholder,
@@ -186,16 +199,29 @@
   }
 
   div#register-form .bottom-fields {
-    margin-top: 8.5rem;
+    margin-top: 11vh;
     display: flex;
     justify-content: space-between;
   }
 
   div#register-form .bottom-fields .email,
-  div#register-form .bottom-fields .password {
-    width: 16%;
+  div#register-form .bottom-fields .password,
+  div#register-form .password-field {
+    width: 11vw;
     position: relative;
-    margin-top: 4.6rem;
+    margin-top: 12vh;
+  }
+
+  div#register-form .bottom-fields .password {
+    width: 100%;
+  }
+
+  div#register-form .password-field .password {
+    margin-top: 2rem;
+  }
+
+  div#register-form .password-field .password:nth-child(2) {
+    margin-top: 1.5rem;
   }
 
   div#register-form .bottom-fields .email img,
@@ -212,22 +238,22 @@
   }
 
   div#register-form .form-group.btns img {
-    width: 72%;
-    margin: 0 auto;
+    width: 30.5vw;
+    margin: 0 6vw;
     object-position: 3px;
   }
 
   div#register-form .form-group button {
     padding: 10px 20px;
     width: fit-content;
-    min-width: 158px;
-    margin: -65px auto 0px;
+    min-width: 11.5vw;
+    margin: -8.8vh auto 0px;
     cursor: pointer;
     background: none;
     color: #951617;
     font-family: "Old London";
-    font-size: 30px;
-    line-height: 16px;
+    font-size: 2.3vw;
+    line-height: 0;
     border: none;
   }
 </style>

@@ -20,10 +20,10 @@
       <form @submit.prevent="handleLogin">
         <div id="login-form">
           <div class="form-group">
-            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Email" v-model="form.email" />
           </div>
           <div class="form-group">
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" v-model="form.password" />
           </div>
           <div class="log-buttons">
           <div class="form-group">
