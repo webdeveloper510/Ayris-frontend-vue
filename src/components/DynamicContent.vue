@@ -26,6 +26,10 @@ export default {
       import("@/views/Account/Login")
     ),
 
+    ProfileComponent: defineAsyncComponent(() => 
+      import("@/views/Account/Profile")
+    ),
+
     RegisterComponent: defineAsyncComponent(() =>
       import("@/views/Account/Register")
     ),
@@ -76,6 +80,10 @@ export default {
 
       if (currentPage.value === "music") {
         return "MusicComponent";
+      }
+
+      if (currentPage.value === "profile") {
+        return "ProfileComponent";
       }
 
       return "NULLLL";

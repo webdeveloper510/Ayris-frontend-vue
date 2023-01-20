@@ -1,5 +1,4 @@
 <template>
-  <h1>Profile</h1>
   <Profile></Profile>
 </template>
 
