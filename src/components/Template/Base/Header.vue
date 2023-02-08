@@ -25,7 +25,7 @@
         <div class="header-mid-right">
           <div class="text-mid-left-right text-right">
             <p>
-              <router-link to="/test">Search</router-link>
+              <router-link to="/search">Search</router-link>
             </p>
           </div>
         </div>

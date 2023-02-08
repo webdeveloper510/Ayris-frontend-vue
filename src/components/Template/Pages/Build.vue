@@ -181,25 +181,28 @@ export default {
   },
 
   computed: {
-    loggedIn() {
-      return this.$store.state.auth.status.loggedIn;
-    },
+    // loggedIn() {
+    //   return this.$store.state.auth.status.loggedIn;
+    // },
   },
   created() {
-    if (this.loggedIn) {
-      this.getMyBuild();
-      this.getObjectName(this.myBuild.object_name);
-    }
+    // if (this.loggedIn) {
+    //   this.getMyBuild();
+    //   this.getObjectName(this.myBuild.object_name);
+    // }
   },
 
   methods: {
-    getMyBuild() {
-      console.log("this.$store.state.data.user :", this.$store.state.data.user);
-      this.myBuild = this.$store.state.data.user[0].build;
-    },
-    getObjectName(objectNames) {
-      this.selectedObjName = objectNames.map((x) => x.name);
-    },
+    // getMyBuild() {
+    //   console.log("this.$store.state.data.user :", this.$store.state.data.user);
+    //   this.myBuild = this.$store.state.data.user[0].build;
+    // },
+    // getObjectName(objectNames) {
+    //   this.selectedObjName = objectNames.map((x) => x.name);
+    // },
+
+
+
     // getAllCat() {
     //   this.$store.dispatch("data/getAllCategories").then(
     //     (response) => {

@@ -51,6 +51,11 @@ const routes = [
     name: "Category",
     component: () => import("../views/Template/Pages/Category"),
   },
+  {
+    path: "/search",
+    name: "Search",
+    component: () => import("../views/Template/Pages/Search"),
+  },
 ];
 
 const router = createRouter({

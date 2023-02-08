@@ -42,6 +42,9 @@ export default {
     MusicComponent: defineAsyncComponent(() =>
       import("@/views/Template/Pages/Music")
     ),
+    SearchComponent: defineAsyncComponent(() =>
+      import("@/views/Template/Pages/Search")
+    ),
   },
   data() {
     return {
@@ -84,6 +87,10 @@ export default {
 
       if (currentPage.value === "profile") {
         return "ProfileComponent";
+      }
+
+      if (currentPage.value === "search") {
+        return "SearchComponent";
       }
 
       return "NULLLL";
