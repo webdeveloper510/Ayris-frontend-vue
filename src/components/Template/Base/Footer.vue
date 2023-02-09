@@ -2,8 +2,8 @@
   <div id="nav-footer">
     <div class="footer-ext">
       <div class="footer-ext-elem left">
-        <p><a href="#">Manifesto</a></p>
-        <p><a href="#">Manual</a></p>
+        <p><router-link to="/manifesto">Manifesto</router-link></p>
+        <p><router-link to="/manual">Manual</router-link></p>
       </div>
     </div>
     <div class="footer-center">

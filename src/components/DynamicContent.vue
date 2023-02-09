@@ -45,6 +45,12 @@ export default {
     SearchComponent: defineAsyncComponent(() =>
       import("@/views/Template/Pages/Search")
     ),
+    ManifestoComponent: defineAsyncComponent(() =>
+      import("@/views/Template/Pages/Manifesto")
+    ),
+    ManualComponent: defineAsyncComponent(() =>
+      import("@/views/Template/Pages/Manual")
+    ),
   },
   data() {
     return {
@@ -91,6 +97,14 @@ export default {
 
       if (currentPage.value === "search") {
         return "SearchComponent";
+      }
+
+      if (currentPage.value === "manifesto") {
+        return "ManifestoComponent";
+      }
+
+      if (currentPage.value === "manual") {
+        return "ManualComponent";
       }
 
       return "NULLLL";

@@ -56,6 +56,11 @@ const routes = [
     name: "Search",
     component: () => import("../views/Template/Pages/Search"),
   },
+  {
+    path: "/manifesto",
+    name: "Manifesto",
+    component: () => import("../views/Template/Pages/Manifesto"),
+  },
 ];
 
 const router = createRouter({
