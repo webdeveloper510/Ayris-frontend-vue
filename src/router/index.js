@@ -61,6 +61,11 @@ const routes = [
     name: "Manifesto",
     component: () => import("../views/Template/Pages/Manifesto"),
   },
+  {
+    path: "/editcategory",
+    name: "EditCategory",
+    component: () => import("../views/Template/Pages/EditCategory"),
+  },
 ];
 
 const router = createRouter({

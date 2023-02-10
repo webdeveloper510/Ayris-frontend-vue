@@ -51,6 +51,9 @@ export default {
     ManualComponent: defineAsyncComponent(() =>
       import("@/views/Template/Pages/Manual")
     ),
+    EditCategoryComponent: defineAsyncComponent(() =>
+      import("@/views/Template/Pages/EditCategory")
+    ),
   },
   data() {
     return {
@@ -106,6 +109,10 @@ export default {
       if (currentPage.value === "manual") {
         return "ManualComponent";
       }
+
+    if (currentPage.value === "editcategory") {
+      return "EditCategoryComponent";
+    }
 
       return "NULLLL";
     });

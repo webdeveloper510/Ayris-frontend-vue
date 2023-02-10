@@ -29,7 +29,7 @@
       </div>
       <div class="footer-center-elem">
         <div class="footer-center-text ext-right">
-          <p><a href="#">Edit Category</a></p>
+          <p><router-link to="/editcategory">Edit Category</router-link></p>
         </div>
       </div>
     </div>
