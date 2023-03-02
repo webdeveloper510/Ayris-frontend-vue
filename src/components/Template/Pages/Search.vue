@@ -41,6 +41,110 @@
     </div>
   </div>
   <FooterComponent></FooterComponent>
+  <div class="insert-bg">
+    <div class="insert-container">
+
+      <div class="buttons">
+        <button type="button">Insert</button>
+      </div>
+
+      <div class="insert-form-container title">
+        <div class="input-container">
+          <p>Title Field</p>
+        </div>
+      </div>
+      <form class="insert-fields-container">
+        <div class="input-fields">
+          <label for="">Insert Title</label>
+          <input type="text" placeholder="Title">
+        </div>
+        <div class="input-fields">
+          <label for="">Insert Object Name</label>
+          <input type="text" placeholder="Object">
+        </div>
+        <div class="input-fields">
+          <label for="">Insert Artist Name</label>
+          <input type="text" placeholder="Artist">
+        </div>
+      </form>
+
+      <div class="insert-form-container">
+        <div class="input-container heather">
+          <p>Heather Format</p>
+        </div>
+      </div>
+      <div class="file-container">
+        <h2>File As</h2>
+        <div class="file-list">
+          <div class="file-box">
+            <p>Browse Videos</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+          <div class="file-box">
+            <p>Browse Linked Images</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+          <div class="file-box">
+            <p>Browse Images</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+          <div class="file-box">
+            <p>Browse Gifs</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+        </div>
+      </div>
+
+      <div class="insert-form-container">
+        <div class="input-container heather">
+          <p>Links</p>
+        </div>
+      </div>
+      <form class="insert-fields-container">
+        <div class="input-fields">
+          <label for="">Insert Live Link</label>
+          <input type="file" placeholder="Title">
+        </div>
+        <div class="input-fields">
+          <label for="">Insert Homepage Link</label>
+          <input type="file" placeholder="Object">
+        </div>
+      </form>
+
+      <div class="file-container">
+        <h2>Browse By</h2>
+        <div class="file-list">
+          <div class="file-box">
+            <p>Individual Artist Soldier</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+          <div class="file-box">
+            <p>Group Movement Legion</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+          <div class="file-box">
+            <p>Nation Culture Army</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+        </div>
+      </div>
+
+      <div class="file-container">
+        <h4>Browse By</h4>
+        <div class="file-list">
+          <div class="file-box">
+            <p>Profile</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+          <div class="file-box">
+            <p>Accounts</p>
+            <img src="../../../assets/green-button.png" alt="green-button">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </template>
 
 <style lang="scss">
@@ -147,6 +251,7 @@
   .menu.menu-right .text-right p:not(:first-child) {
     margin-top: 1.5vw;
   }
+
   .menu {
     /*border: 1px solid blue;*/
     /*background-color: grey !important;*/
@@ -156,6 +261,167 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+
+  .insert-bg {
+    background-image: url('../../../assets/build-bg.png');
+    background-size: 100% 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 99%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    .insert-container {
+      background-image: url('../../../assets/insert-bg.png');
+      background-size: contain;
+      min-height: 145vh;
+      background-repeat: no-repeat;
+      width: 98%;
+      overflow: hidden;
+      position: relative;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .buttons {
+        background-image: url('../../../assets/field-input.png');
+        background-repeat: no-repeat;
+        background-size: 23% 100%;
+        margin-top: 3.6vw;
+        padding: 18px 0;
+        background-position: center center;
+        position: absolute;
+        top: 0;
+        left: 18px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          background-color: transparent;
+          border: none;
+          outline: none;
+          color: #fff;
+          font-family: "Old London";
+          font-size: 3rem;
+          cursor: pointer;
+        }
+      }
+      .insert-form-container {
+        background-image: url('../../../assets/form-bg.png');
+        background-size: 100% 100%;
+        min-height: 45vh;
+        background-repeat: no-repeat;
+        width: 65vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 6vw;
+        .input-container {
+          width: 13.3vw;
+          display: flex;
+          justify-content: center;
+          p {
+            background-color: #000;
+            outline: none;
+            width: 100%;
+            box-shadow: none;
+            border: 1px solid #6c6a5a;
+            min-height: 4.5vh;
+            color: red;
+            padding: 2px 10px;
+            font-family: "Trajan-Bold";
+            text-transform: uppercase;
+            font-size: 1.2vw;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .input-container.heather {
+          width: 16.3vw;
+        } 
+      }
+      .title {
+        margin-top: 15vw;
+      }
+      .insert-fields-container {
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+        margin-top: 5vw;
+        .input-fields {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 2vw;
+          label {
+            background: #000;
+            border: 2px solid #6c6a5a;
+            color: #6c6a5a;
+            font-family: "Old London";
+            min-width: 20vw;
+            font-size: 1.6vw;
+            font-weight: bold;
+            padding: 6px;
+          }
+          input {
+            background: #000;
+            border: 1px solid #6c6a5a;
+            color: #6c6a5a;
+            text-transform: uppercase;
+            font-family: "Trajan-Bold";
+            text-align: center;
+            &::file-selector-button {
+              width: 100%;
+              height: 100%;
+              background: none;
+              color: #6c6a5a;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .file-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+          color: #fff;
+          font-size: 3vw;
+        }
+        h4 {
+          color: #fff;
+          font-size: 1.5vw;
+        }
+        .file-list {
+          width: 30vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .file-box {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            p {
+              color: #fff;
+              min-width: 14vw;
+              text-align: left;
+              font-size: 1.5vw;
+              font-family: "Trajan-Bold";
+            }
+            img {
+              width: 35px;
+              object-fit: contain;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
   }
 </style>
 
